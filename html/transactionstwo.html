@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Payment Gateway</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="features">
+        <div class="container nav-feature">
+            <div class="navbar">
+                <h1>Gateway</h1>
+                <nav class="nav-list">
+                    <ul class="nav-list-first">
+                        <li><a href="features.html"><i class="fa fa-share-nodes"></i>Features</a></li>
+                        <li><a href="dashboard.html"><i class="fa fa-table-cells-large"></i>
+                                Dashboard</a></li>
+                        <li class="active"><a href="transactions.html"><i class="fa fa-box-archive"></i>Transactions</a>
+                        </li>
+                        <li><a href="settlements.html"><i class="fa fa-dice"></i>Settlements</a></li>
+                        <li><a href="transfers.html"><i class="fa fa-arrow-up-right-from-square"></i>Transfers</a></li>
+                        <li><a href="refunds.html"><i class="fa fa-money-bill-transfer"></i>Refunds</a></li>
+                        <li><a href="disputes.html"><i class="fa fa-flag"></i>Disputes</a></li>
+                    </ul>
+                    <ul class="nav-list-second">
+                        <li><a href="developer.html"><i class="fa fa-window-restore"></i>Developer</a></li>
+                        <li><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                        <li><a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Transactions -->
+            <div class="feature-board">
+                <div class="feature-head">
+                    <p><span id="get-menu"><i class="fa fa-bars"></i></span><i class="fa fa-box-archive"></i> Transaction History</p>
+                    <div class="img-bell-name">
+                        <i class="fa fa-bell"></i>
+                        <img src="../images/robert.jpg" alt="">
+                        <div class="position-dropdown">
+                            <p>Robert Eddie <i class="fas fa-angle-down" id="angle-down"></i></p>
+                            <nav>
+                                <ul class="user-nav">
+                                    <li><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                                    <li><a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log
+                                            out</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="showcase">
+
+                    <div class="activity-board">
+                        <div class="card">
+                            <div class="trade-preview">
+                                <form action="">
+                                    <input type="text" name="q" class="transac-search" placeholder="Search">
+                                </form>
+                                <div class="filter-plus">
+                                    <button class="year-option filter" id="getFilter">Filter <i class="fa fa-filter"></i>
+                                    </button>
+                                    <select name="year" id="" class="year-option">
+                                        <option value="1-year">1 Year</option>
+                                        <option value="2-years">2 years</option>
+                                    </select>
+
+
+                                    <div class="filter-form card">
+                                        <div class="filter-set">
+                                            <label>Custom data range</label>
+                                            <!-- <input type="date" name="start-date" id="">
+                                        <input type="date" name="end-date" id=""> -->
+                                            <div class="flex">
+                                                <input type="text" name="start-date" placeholder="Start date">
+                                                <input type="text" name="end-date" placeholder="End date">
+                                            </div>
+                                        </div>
+                                        <div class="filter-set">
+                                            <label>Status</label>
+                                            <select name="status" id="">
+                                                <option value="select" selected disabled>Select</option>
+                                                <option value="pending">Pending</option>
+                                                <option value="failed">Failed</option>
+                                                <option value="success">Successful</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-set">
+                                            <label>Payment Method</label>
+                                            <select name="status" id="">
+                                                <option value="select" selected disabled>Select</option>
+                                                <option value="card">Card</option>
+                                                <option value="bank">Bank</option>
+                                                <option value="transfer">Transfer</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-set">
+                                            <label>Customer E-mail</label>
+                                            <select name="status" id="">
+                                                <option value="select" selected disabled>Select</option>
+                                                <option value="mail1">aaa@email.com</option>
+                                                <option value="mail2">aaa@gmail.com</option>
+                                                <option value="mail3">aaa@yahoo.com</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-set">
+                                            <label>Destination Account Number</label>
+                                            <select name="status" id="">
+                                                <option value="select" selected disabled>Select</option>
+                                                <option value="act-num1">0000</option>
+                                                <option value="act-num2">1111</option>
+                                                <option value="act-num3">2222</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-set">
+                                            <label>Reference/ID</label>
+                                            <select name="status" id="">
+                                                <option value="select" selected disabled>Select</option>
+                                                <option value="id-1">0000</option>
+                                                <option value="id-2">1111</option>
+                                                <option value="id-3">2222</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-set">
+                                            <label>Amount</label>
+                                            <select name="status" id="">
+                                                <option value="select" selected disabled>Select</option>
+                                                <option value="id-1">₦100,00.00</option>
+                                                <option value="id-2">₦11111.12</option>
+                                                <option value="id-3">₦12222</option>
+                                            </select>
+                                        </div>
+                                        <form action="">
+                                            <input type="submit" value="Apply Filter" class="btn btn-prm"
+                                                id="getFilter">
+                                        </form>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="show-activity">
+                                <svg width="141" height="103" viewBox="0 0 141 103" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.97095 52.3588V98.0501C1.97095 99.7173 3.3217 101.069 4.98795 101.069H136.012C137.678 101.069 139.029 99.7173 139.029 98.0501V52.3588L122.66 3.93294C122.246 2.70668 121.096 1.88135 119.802 1.88135H21.1975C19.9038 1.88135 18.754 2.70668 18.3396 3.93294L1.97095 52.3588Z"
+                                        stroke="#FF6B00" stroke-width="2.5" />
+                                </svg>
+
+
+                                <p style="font-weight:500; font-size:0.85em; margin:0px;">You do not have any
+                                    transactions to show.</p>
+                            </div>
+                        </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

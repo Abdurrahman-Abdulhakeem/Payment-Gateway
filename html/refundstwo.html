@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Payment Gateway</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="features">
+        <div class="container nav-feature">
+            <div class="navbar">
+                <h1>Gateway</h1>
+                <nav class="nav-list">
+                    <ul class="nav-list-first">
+                        <li><a href="features.html"><i class="fa fa-share-nodes"></i>Features</a></li>
+                        <li><a href="dashboard.html"><i class="fa fa-table-cells-large"></i>
+                                Dashboard</a></li>
+                        <li><a href="transactions.html"><i class="fa fa-box-archive"></i>Transactions</a></li>
+                        <li><a href="settlements.html"><i class="fa fa-dice"></i>Settlements</a></li>
+                        <li><a href="transfers.html"><i class="fa fa-arrow-up-right-from-square"></i>Transfers</a></li>
+                        <li class="active"><a href="refunds.html"><i class="fa fa-money-bill-transfer"></i>Refunds</a>
+                        </li>
+                        <li><a href="disputes.html"><i class="fa fa-flag"></i>Disputes</a></li>
+                    </ul>
+                    <ul class="nav-list-second">
+                        <li><a href="developer.html"><i class="fa fa-window-restore"></i>Developer</a></li>
+                        <li><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                        <li><a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Refunds -->
+            <div class="feature-board">
+                <div class="feature-head">
+                    <p><span id="get-menu"><i class="fa fa-bars"></i></span><i class="fa fa-money-bill-transfer"></i>Refunds</p>
+                    <div class="img-bell-name">
+                        <i class="fa fa-bell"></i>
+                        <img src="../images/robert.jpg" alt="">
+                        <div class="position-dropdown">
+                            <p>Robert Eddie <i class="fas fa-angle-down" id="angle-down"></i></p>
+                            <nav>
+                                <ul class="user-nav">
+                                    <li><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                                    <li><a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log
+                                            out</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="showcase">
+
+                    <div class="flex refund">
+                        <div class="card" style="min-width: 300px;">
+                            <p style="font-weight:500; font-size:0.85em; margin:0px;">Completed Refunds
+                            </p>
+                            <h2 style="margin:20px 0px; font-size: 1.5em">₦0.00</h2>
+                        </div>
+
+                        <div class="card" style="min-width: 300px;">
+                            <p style="font-weight:500; font-size:0.85em; margin:0px;">Pending Refunds
+                            </p>
+                            <h2 style="margin:20px 0px; font-size: 1.5em">₦0.00</h2>
+                        </div>
+
+                        <div class="card" style="min-width: 300px;">
+                            <p style="font-weight:500; font-size:0.85em; margin:0px;">Failed Refunds
+                            </p>
+                            <h2 style="margin:20px 0px; font-size: 1.5em">₦0.00</h2>
+                        </div>
+                    </div>
+
+                    <div class="activity-board">
+                        <div class="card">
+                            <div class="trade-preview">
+                                <h2 style="font-size: 1.2em">Refunds History</h2>
+                                <select name="year" id="" class="year-option">
+                                    <option value="30-days">Last 30 Days</option>
+                                    <option value="60-days">Last 60 Days</option>
+                                </select>
+
+                            </div>
+                            <div class="show-activity">
+                                <svg width="102" height="115" viewBox="0 0 102 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M87.6873 0.989856L100.148 90.1413L101.269 99.0852C101.63 101.966 99.5671 104.586 96.661 104.935L19.0468 114.272C16.1407 114.621 13.4921 112.569 13.131 109.688L0.956956 12.548C0.819601 11.452 1.59727 10.4565 2.69394 10.3246L13.2478 9.05502" fill="#FF6B00" fill-opacity="0.25"/>
+                                    </svg>
+                                    
+
+                                <p style="font-weight:500; font-size:0.85em; margin:0px;">No refunds data to show</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
